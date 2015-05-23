@@ -10,7 +10,7 @@ game.SpendExp = me.ScreenObject.extend({
                     me.input.bindKey(me.input.KEY.F3, "F3");
                     me.input.bindKey(me.input.KEY.F4, "F4");
                     me.input.bindKey(me.input.KEY.F5, "F5");
-                    var exp1cost = (game.data.exp1 + 1 * 600);
+                    var exp1cost = ((Number(game.data.exp1) + 1) * 100);
                
                me.game.world.addChild(new (me.Renderable.extend({
                    init: function(){
@@ -20,7 +20,7 @@ game.SpendExp = me.ScreenObject.extend({
                    },
                    
                    draw: function(renderer){
-                       this.font.draw(renderer.getContext(), "#~Aw-sean-auts~#", 350, 190);
+                       this.font.draw(renderer.getContext(), "* Battle Royale C]:{ *", 350, 190);
                        this.font.draw(renderer.getContext(), "Spend Exp", 440, 10);
                        this.font.draw(renderer.getContext(), "Current Exp: " + game.data.exp.toString(), 12, 10);
                        this.font.draw(renderer.getContext(), "F5 To Skip",830, 10);

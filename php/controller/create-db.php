@@ -14,11 +14,9 @@
             . "exp4 int(4),"
              . "PRIMARY KEY (id))");
     // this is the table for the users \\
-    if($query){
-        echo "<p>Successfully created table: users</p>"; 
+    if($query){ 
         // this is the code you get when you sign in or register \\
      }
      else{
-         echo "<p>" . $_SESSION["connection"]->error . "</p>";
          // if there was an error this pops up \\
      }

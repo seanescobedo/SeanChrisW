@@ -29,9 +29,9 @@
             echo json_encode($array);
         }
         else {
-            echo "<p>Invalid username or password</p>";
+            echo "Invalid username or password";
         }
     }
     else {
-        echo "<p>Invalid username or password</p>";
+        echo "Invalid username or password";
     }   

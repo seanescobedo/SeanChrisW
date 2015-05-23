@@ -59,9 +59,9 @@ var game = {
         
         me.state.SPENDEXP = 112;
         
-        //me.state.NEW = 113;
+        me.state.NEW = 113;
         
-        //me.state.LOAD = 114;
+        me.state.LOAD = 114;
 
 	// Initialize the audio.
 	me.audio.init("mp3,ogg");
@@ -86,12 +86,13 @@ var game = {
                 me.pool.register("HeroDeathManager", game.HeroDeathManager);
                 me.pool.register("ExperienceManager", game.ExperienceManager);
                 me.pool.register("SpendGold", game.SpendGold);
+                me.pool.register("InfoScreen", game.InfoScreen);
             
 		me.state.set(me.state.MENU, new game.TitleScreen());
 		me.state.set(me.state.PLAY, new game.PlayScreen());
                 me.state.set(me.state.SPENDEXP, new game.SpendExp());
-                //me.state.set(me.state.NEW, new game.NewProfile());
-                //me.state.set(me.state.LOAD, new game.LoadProfile());
+                me.state.set(me.state.NEW, new game.NewProfile());
+                me.state.set(me.state.LOAD, new game.LoadProfile());
 
 		// Start the game.
 		me.state.change(me.state.MENU);
