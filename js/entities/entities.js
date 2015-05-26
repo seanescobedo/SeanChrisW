@@ -113,12 +113,12 @@ init: function(x, y, settings) {
             //in setVelcoity() & multiplying it by me.timer.tick
             //me.timer.tick makes smooth movements 
             this.body.vel.x += this.body.accel.x * me.timer.tick;
-            this.flipX(true);
+            this.flipX(false);
             this.facing = "right";
             }   else if (me.input.isKeyPressed('left')) {
                 this.facing = "left";
             // this flips the image around\\
-            this.flipX(false);
+            this.flipX(true);
             this.body.vel.x -= this.body.accel.x * me.timer.tick;
         } else {
             this.body.vel.x = 0;
@@ -230,9 +230,9 @@ init: function(x, y, settings) {
     },
     
       addAnimation: function(){
-            this.renderable.addAnimation("idle", [78]);
-            this.renderable.addAnimation("walk", [117, 118, 119, 120, 121, 122, 123, 124, 125], 75);
-            this.renderable.addAnimation("attack", [65, 66, 67, 68, 69, 70, 71, 72], 75);
+            this.renderable.addAnimation("idle", [0]);
+            this.renderable.addAnimation("walk", [1, 2], 75);
+            this.renderable.addAnimation("attack", [1, 2], 75);
         },
         
       hitCreep: function(response){

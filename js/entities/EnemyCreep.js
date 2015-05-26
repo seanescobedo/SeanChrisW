@@ -2,9 +2,9 @@ game.EnemyCreep = me.Entity.extend({
     init: function(x, y, settings) {
     this._super(me.Entity, 'init', [x, y, {
             image: "creep1",
-            spritewidth: "32",
+            spritewidth: "64",
             spriteheight: "64",
-            width: 32,
+            width: 64,
             height: 64,
             getShape: function() {
                 return (new me.Rect(0, 0, 32, 64)).toPolygon();
@@ -24,7 +24,7 @@ game.EnemyCreep = me.Entity.extend({
         
         this.type = "EnemyCreep";
         
-        this.renderable.addAnimation("walk", [3, 4, 5], 80);
+        this.renderable.addAnimation("walk", [0, 1, 2, 3, 4], 80);
         this.renderable.setCurrentAnimation("walk");
         
        },

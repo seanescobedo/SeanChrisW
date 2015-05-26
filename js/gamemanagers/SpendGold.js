@@ -61,7 +61,7 @@ game.SpendGold = Object.extend({
                    },
                    
                    draw: function(renderer){
-                       this.font.draw(renderer.getContext(), "#~Aw-sean-auts~#" , this.pos.x, this.pos.y);
+                       this.font.draw(renderer.getContext(), "* Battle Royale C]:{ *" , this.pos.x, this.pos.y);
                        this.font.draw(renderer.getContext(), "Current Gold: "+ game.data.gold, this.pos.x + 700, this.pos.y);
                        this.font.draw(renderer.getContext(), "Damage ~ " + "Cost: "+ ((game.data.skill1)* 10) , this.pos.x + 320, this.pos.y + 80);
                        this.font.draw(renderer.getContext(), "Speed ~ "+ "Cost: "+ ((game.data.skill2)* 10), this.pos.x + 320, this.pos.y + 160);
@@ -165,3 +165,4 @@ game.SpendGold = Object.extend({
         }
     }
 });
+

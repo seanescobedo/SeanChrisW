@@ -14,7 +14,7 @@ game.TitleScreen = me.ScreenObject.extend({
                    },
                    
                    draw: function(renderer){
-                       this.font.draw(renderer.getContext(), "#~Aw-sean-auts~#", 370, 130);
+                      
                        this.font.draw(renderer.getContext(), "Start A New Game", this.pos.x, this.pos.y);
                    },
                    
@@ -24,7 +24,7 @@ game.TitleScreen = me.ScreenObject.extend({
                    
                    newGame: function(){
                        me.input.releasePointerEvent('pointerdown', this);
-                       me.state.change(me.state.PLAY);
+                       me.state.change(me.state.NEW);
                    }
                    
                })));
@@ -37,7 +37,7 @@ game.TitleScreen = me.ScreenObject.extend({
                    },
                    
                    draw: function(renderer){
-                       this.font.draw(renderer.getContext(), "#~Aw-sean-auts~#", 370, 130);
+                       this.font.draw(renderer.getContext(), "* Battle Royale C]:{ *", 370, 130);
                        this.font.draw(renderer.getContext(), "Continue", this.pos.x, this.pos.y);
                        this.font.draw(renderer.getContext(), "instagram: SEVZX", 390, 400);
                    },
@@ -49,7 +49,7 @@ game.TitleScreen = me.ScreenObject.extend({
                    newGame: function(){
                        me.input.releasePointerEvent('pointerdown', this);
                        
-                       me.state.change(me.state.SPENDEXP);
+                       me.state.change(me.state.LOAD);
                    }
                    
                })));
