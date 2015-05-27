@@ -24,7 +24,6 @@ game.InfoScreen = Object.extend({
             
         }
         
-        
         return true;
     },
     
@@ -53,12 +52,12 @@ game.InfoScreen = Object.extend({
                    draw: function(renderer){
                        this.font.draw(renderer.getContext(), "* Battle Royale C]:{ *" , this.pos.x, this.pos.y);
                        this.font.draw(renderer.getContext(), "Current Gold: "+ game.data.gold, this.pos.x + 700, this.pos.y);
-                       this.font.draw(renderer.getContext(), "Damage ~ " + "Cost: "+ ((game.data.skill1)* 10) , this.pos.x + 320, this.pos.y + 80);
-                       this.font.draw(renderer.getContext(), "Speed ~ "+ "Cost: "+ ((game.data.skill2)* 10), this.pos.x + 320, this.pos.y + 160);
-                       this.font.draw(renderer.getContext(), "Health ~ "+ "Cost: "+ ((game.data.skill3)* 10), this.pos.x + 320, this.pos.y + 240);
-                       this.font.draw(renderer.getContext(), "U ~ Speed Burst ~ "+ "Cost: "+ ((game.data.ability1)*10), this.pos.x + 320, this.pos.y + 320);
-                       this.font.draw(renderer.getContext(), "I ~ Eat Creep ~ " + "Cost: "+ ((game.data.ability2)* 10), this.pos.x + 320, this.pos.y+ 400);
-                       this.font.draw(renderer.getContext(), "O ~ Throw Spear ~ "+ "Cost: "+ ((game.data.ability3)* 10), this.pos.x + 320, this.pos.y + 480);
+                       this.font.draw(renderer.getContext(), "W ~ Up Arrow = jump " , this.pos.x + 320, this.pos.y + 80);
+                       this.font.draw(renderer.getContext(), "A ~ Left Arrow = left ", this.pos.x + 320, this.pos.y + 160);
+                       this.font.draw(renderer.getContext(), "D ~ Right Arrow = right ", this.pos.x + 320, this.pos.y + 240);
+                       this.font.draw(renderer.getContext(), "Z ~ L = attacking", this.pos.x + 320, this.pos.y + 320);
+                       this.font.draw(renderer.getContext(), "B ~ BuyScreen ", this.pos.x + 320, this.pos.y+ 400);
+                       this.font.draw(renderer.getContext(), "I ~ Exit Info ", this.pos.x + 320, this.pos.y + 480);
                        
                       
                        
