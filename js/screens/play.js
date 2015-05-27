@@ -26,7 +26,7 @@ game.PlayScreen = me.ScreenObject.extend({
                  me.game.world.addChild(spendGold, 0);
                  
                  var infoScreen = me.pool.pull("InfoScreen", 0, 0, {});
-                 me.game.world.addChild(spendGold, 0);
+                 me.game.world.addChild(infoScreen, 0);
                  
                  me.input.bindKey(me.input.KEY.I, "info");
                  me.input.bindKey(me.input.KEY.B, "buy");

@@ -65,7 +65,9 @@ require_once("php/controller/create-db.php");
 		<script type="text/javascript" src="js/screens/play.js"></script>
                 <script type="text/javascript" src="js/screens/spendExp.js"></script>
                 <script type="text/javascript" src="js/screens/loadProfile.js"></script>
-                <script type="text/javascript" src="js/screens/newProfile.js"></script>
+                <script type="text/javascript" src="js/screens/newProfile.js"></script>                
+                <script type="text/javascript" src="js/gamemanagers/InfoScreen.js"></script>
+
 		<!-- /build -->
 		<!-- Bootstrap & Mobile optimization tricks -->
 		<script type="text/javascript">
