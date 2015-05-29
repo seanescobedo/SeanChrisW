@@ -15,7 +15,7 @@ game.resources = [
           {name: "gold-screen", type:"image", src: "data/img/spend.png"},
           {name: "info-screen", type:"image", src: "data/img/world.jpg"},
           {name: "load-screen", type:"image", src: "data/img/welcome to forever.png"},
-          {name: "new-screen", type:"image", src: "data/img/water.jpg"},
+          {name: "new-screen", type:"image", src: "data/img/fetty.jpeg"},
           
 	/* Atlases 
 	 * @example
@@ -29,6 +29,7 @@ game.resources = [
  	 */
         
         {name: "level01", type: "tmx", src: "data/map/map1.tmx"},
+        {name: "level02", type: "tmx", src: "data/map/deez.tmx"},
         
 
 	/* Background music. 
